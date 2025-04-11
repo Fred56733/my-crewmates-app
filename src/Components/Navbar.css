@@ -5,6 +5,7 @@
     align-items: center;
     background-color: #333;
     padding: 10px 20px;
+    border-radius: 10px;
     color: #ccc;
 }
 
@@ -26,12 +27,12 @@
 /* Individual Link Styling */
 .navbar-link {
     text-decoration: none;
-    color: #ccc;
-    font-size: 1rem;
+    color: #00bcd4;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 /* Hover Effect for Links */
 .navbar-link:hover {
-    color: #00bcd4;
+    color: #006977;
 }

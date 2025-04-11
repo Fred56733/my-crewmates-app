@@ -32,7 +32,7 @@
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #ccc;
 }
 
@@ -43,7 +43,7 @@
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 1rem;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
@@ -55,6 +55,23 @@
     outline: none;
 }
 
+/* Dropdown Styling */
+.create select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.create select:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
+
 /* Button Styling */
 .create button {
     width: 100%;
@@ -62,12 +79,12 @@
     background-color: #00bcd4;
     color: white;
     border: none;
-    border-radius: 4px;
-    font-size: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .create button:hover {
-    background-color: #008c9e;
+    background-color: #006977;
 }
