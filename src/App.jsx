@@ -11,9 +11,10 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/create" element={<Create />} />
-                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/" element={<Home />} /> {/* Home page */}
+                <Route path="/create" element={<Create />} /> { /* For creating new crewmates */}
+                <Route path="/create/:id" element={<Create />} /> {/* For editing */}
+                <Route path="/gallery" element={<Gallery />} /> {/* Crewmate display page */}
             </Routes>
         </Router>
     );
