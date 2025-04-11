@@ -36,3 +36,7 @@
 .navbar-link:hover {
     color: #006977;
 }
+
+.navbar-logo {
+    width: 50px;
+}
