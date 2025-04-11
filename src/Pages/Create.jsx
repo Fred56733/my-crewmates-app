@@ -29,6 +29,7 @@ const Create = () => {
         }
     }, [id]);
 
+    // Handle input changes
     const handleChange = (event) => {
         const { name, value } = event.target;
         setCrewmate((prev) => ({
@@ -78,6 +79,7 @@ const Create = () => {
         }
     };
 
+    // Handle delete crewmate
     const handleDelete = async () => {
         const { error } = await supabase.from("crewmates").delete().eq("id", id);
 

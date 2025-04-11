@@ -21,7 +21,11 @@ const Gallery = () => {
 
     useEffect(() => {
         const fetchCrewmates = async () => {
-            const { data, error } = await supabase.from("crewmates").select("*");
+            const { data, error } = await supabase
+                .from("crewmates")
+                .select("*")
+                .order("created_at", { ascending: false }); // Sort by creation date (newest first)
+
             if (error) {
                 console.error("Error fetching crewmates:", error.message);
             } else {
