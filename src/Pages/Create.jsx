@@ -56,7 +56,7 @@ const Create = () => {
                 console.error("Error updating crewmate:", error.message);
                 alert("Failed to update crewmate.");
             } else {
-                alert("Crewmate updated successfully!");
+                // alert("Crewmate updated successfully!");
                 navigate("/gallery");
             }
         } else {
@@ -73,7 +73,7 @@ const Create = () => {
                 console.error("Error creating crewmate:", error.message);
                 alert("Failed to create crewmate.");
             } else {
-                alert("Crewmate created successfully!");
+                // alert("Crewmate created successfully!");
                 navigate("/gallery");
             }
         }
@@ -87,7 +87,7 @@ const Create = () => {
             console.error("Error deleting crewmate:", error.message);
             alert("Failed to delete crewmate.");
         } else {
-            alert("Crewmate deleted successfully!");
+            // alert("Crewmate deleted successfully!");
             navigate("/gallery");
         }
     };
