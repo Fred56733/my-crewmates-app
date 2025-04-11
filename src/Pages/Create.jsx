@@ -49,6 +49,7 @@ const Create = () => {
                     name: crewmate.name,
                     color: crewmate.color,
                     description: crewmate.description,
+                    role: crewmate.role,
                 })
                 .eq("id", id);
 
@@ -67,6 +68,7 @@ const Create = () => {
                     name: crewmate.name,
                     color: crewmate.color,
                     description: crewmate.description,
+                    role: crewmate.role,
                 });
 
             if (error) {
@@ -125,6 +127,24 @@ const Create = () => {
                     <option value="red">Red</option>
                     <option value="tan">Tan</option>
                     <option value="yellow">Yellow</option>
+                </select>
+                <br />
+
+                <label htmlFor="role">Role:</label>
+                <select
+                    id="role"
+                    name="role"
+                    value={crewmate.role}
+                    onChange={handleChange}
+                    required
+                >
+                    <option value="">Select a role</option>
+                    <option value="Captain">Captain/Pilot</option>
+                    <option value="Engineer">Engineer/Mechanic</option>
+                    <option value="Scientist">Scientist</option>
+                    <option value="Chef">Chef</option>
+                    <option value="Botanist">Botanist</option>
+                    <option value="Crewmate">Crewmate</option>
                 </select>
                 <br />
 

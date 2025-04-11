@@ -51,7 +51,7 @@ const Gallery = () => {
                             alt={crewmate.color}
                             className="gallery-card-image"
                         />
-                        <h2>{crewmate.name}</h2>
+                        <h2>{crewmate.role + " " + crewmate.name}</h2>
                         <p>{crewmate.description}</p>
                     </div>
                 ))}
